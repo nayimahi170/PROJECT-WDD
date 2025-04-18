@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comparision property website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <script>
+
+
+
+        // Key-value mapping of property names to their URLs
+        const propertyMap = {
+          "bangalore": "bangalore.html",
+          "rajasthan": "rajasthan.html",
+          "mumbai": "mumbai.html",
+          "gujarat": "gujarat.html",
+          "delhi": "delhi.html",
+          "kolkata": "kolkata.html"
+        };
+      
+        function searchProperty() {
+          const query = document.getElementById("searchInput").value.trim().toLowerCase();
+      
+          if (propertyMap[query]) {
+            // Redirect to the property page
+            window.location.href = propertyMap[query];
+          } else {
+            alert("Property not found. Please try again.");
+          }
+        }
+
+        
+ 
+
+      </script>
+</head>
+
+<body>
+    
+    <section class="header">
+        
+        <nav>
+      
+            <div class="nav-link" id="links">    
+            <ul class=" sidebar">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact2.html">CONTACT US</a></li>
+               
+            </ul>
+            </div>
+        </nav>
+        <div class="search-bar">
+            <h1>compare your dream property</h1>
+                <p> Is one of the best website for your property comparison.</p>
+            <input type="text" id="searchInput" placeholder="Enter Property name" />
+            <button onclick="searchProperty()">Search</button>
+          </div>
+    
+        
+       
+        
+    </section>
+    <h1 style="text-align: center;margin-top: 15px; margin-bottom: 15spx;">select city</h1>
+    <div class="city-container">
+      <a href="bangalore.html" class="city-tile">
+          <div class="city-image">
+              <img src="./IMG-20250410-WA0031.jpg" alt="Bangalore">
+          </div>
+          <div class="city-name">
+              Property Rates in Bangalore
+          </div>
+      </a>
+      <a href="rajasthan.html" class="city-tile">
+          <div class="city-image">
+              <img src="./IMG-20250410-WA0032.jpg" alt="Mumbai">
+          </div>
+          <div class="city-name">
+              Property Rates in Rajasthan
+          </div>
+      </a>
+      <a href="mumbai.html" class="city-tile">
+        <div class="city-image">
+            <img src="./IMG-20250410-WA0030.jpg" alt="Mumbai">
+        </div>
+        <div class="city-name">
+            Property Rates in Mumbai
+        </div>
+       </a>
+      <a href="gujarat.html" class="city-tile">
+      <div class="city-image">
+          <img src="./IMG-20250410-WA0028.jpg" alt="Mumbai">
+      </div>
+      <div class="city-name">
+          Property Rates in Gujarat
+      </div>
+       </a>
+       <a href="delhi.html" class="city-tile">
+        <div class="city-image">
+            <img src="./IMG-20250410-WA0029.jpg" alt="Mumbai">
+        </div>
+        <div class="city-name">
+            Property Rates in Delhi
+        </div>
+    </a>
+    <a href="kolkata.html" class="city-tile">
+      <div class="city-image">
+          <img src="./IMG-20250410-WA0027.jpg" alt="Mumbai">
+      </div>
+      <div class="city-name">
+          Property Rates in Kolkata
+      </div>
+  </a>
+  
+      
+     
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>We help you find your dream property with ease and trust.</p>
+          </div>
+      
+          <div class="footer-section links">
+            <h3>Quick <br> Links</h3>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              
+              <li><a href="#">CONTACT US</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section contact">
+            <h3>Contact</h3>
+            <p>Email: support@propertysite.com</p>
+            <p>Phone: +91-9876543210</p>
+            <p>Location: New Delhi, India</p>
+          </div>
+      
+          <div class="footer-section follow">
+            <h3>Follow Us</h3>
+            <!-- Add social icons here if needed -->
+          </div>
+        </div>
+      
+        <hr>
+        <p class="copyright">© 2025 PropertySite. All rights reserved.</p>
+      </footer>
+      
+    
+</body>
+</html>

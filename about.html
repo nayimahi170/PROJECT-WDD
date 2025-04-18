@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Property Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: #333;
+    }
+    .logo{
+    width: 150px;
+    }
+     nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center ;
+     }
+    .nav-link{
+    flex: 1;
+    text-align: right;
+    
+    }
+      .nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+      }
+     .nav-link ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    }
+     .nav-link ul li::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: #f44336;
+    display: flex;
+    margin: auto;
+    transition: 0.5s;
+     }
+    .nav-link ul li:hover::after{
+    width: 100%;
+     }
+    .container {
+      max-width: 80vw;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .section {
+      width: 60%;
+      gap:10px;
+      margin-bottom: 40px;
+    }
+    .team {
+      width: 50%;
+      display:inline-block;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .member {
+      
+      flex: 1 1 200px;
+      background: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      
+    }
+    .member img {
+      
+      width: 50%;
+      
+      border-radius: 8px;
+      margin-bottom: 10px;
+
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">@mb&k</div>
+        <div class="nav-link" id="links">
+            <i class="fa fa-times" onclick="hidemenu()"></i> 
+            
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact2.html">CONTACT US</a></li>
+        </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+        
+    </nav>
+  <div class="container">
+    <h1>About Us</h1>
+
+    <div class="section">
+      <h2>Company Introduction</h2>
+      <p>Welcome to <strong>DreamHome Properties</strong>, your trusted partner in real estate. We specialize in buying, selling, and renting residential and commercial properties across the city. Our goal is to make property dealings simple, transparent, and efficient.</p>
+    </div>
+
+    <div class="section">
+      <h2>Our Mission</h2>
+      <p>To provide honest and customer-focused property solutions that deliver value and satisfaction.</p>
+    </div>
+
+    <div class="section">
+      <h2>Our Vision</h2>
+      <p>To become the most reliable and innovative property platform in the region.</p>
+    </div>
+
+    <div class="section">
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>Verified Property Listings</li>
+        <li>Experienced and Friendly Team</li>
+        <li>Transparent Documentation</li>
+        <li>End-to-End Support</li>
+        <li>Trusted by Hundreds of Clients</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Meet Our Team</h2>
+      <div class="team">
+        <div class="member">
+          <img src="./hafeez contractor.jpg" alt="Team Member 1">
+          <h3>Hafeez contractor</h3>
+          <p>Founder & CEO <br>
+            he is Company leader and create this website 
+          </p>
+        </div>
+
+        <div class="member">
+          <img src="./gayathri setty.jpg" alt="Team Member 2">
+          <h3>Gayatri setty</h3>
+          <p>Sales Head <br>
+             she handle the all managment for this website </p>
+        </div>
+
+        <div class="member">
+          <img src="./ravi saramgan.jpg" alt="Team Member 3">
+          <h3>Ravi saramgan</h3>
+          <p>Legal Advisor
+            <br>handle company managmentand online work
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contact Us</h2>
+      <p>Email: contact@dreamhome.com<br>Phone: +91-9876543210</p>
+    </div>
+  </div>
+</body>
+</html>
+
